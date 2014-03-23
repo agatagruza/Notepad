@@ -1,0 +1,14 @@
+del *.~bpr
+del *.~cpp
+//del *.bpr
+//del *.cpp
+//del *.exe
+del *.obj
+//del *.res
+del *.tds
+del *.~cpp
+del *.~dfm
+del *.~h
+//del *.dfm
+//del *.h
+del *.ddp

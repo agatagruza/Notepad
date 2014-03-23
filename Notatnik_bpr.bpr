@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Notatnik_bpr.exe"/>
+    <OBJFILES value="Notatnik_bpr.obj Notatnik_cpp.obj OProgramie\OProgramie_cpp.obj"/>
+    <RESFILES value="Notatnik_bpr.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) Notatnik_cpp.dfm OProgramie\OProgramie_cpp.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="rtl.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib rtl.lib"/>
+    <PACKAGES value="vcl.bpi rtl.bpi vclx.bpi bcbsmp.bpi dbrtl.bpi adortl.bpi vcldb.bpi 
+      qrpt.bpi bdertl.bpi vcldbx.bpi dsnap.bpi cds.bpi bdecds.bpi teeui.bpi 
+      teedb.bpi tee.bpi teeqr.bpi ibxpress.bpi visualclx.bpi visualdbclx.bpi 
+      vclie.bpi xmlrtl.bpi inet.bpi inetdbbde.bpi inetdbxpress.bpi inetdb.bpi 
+      nmfast.bpi bcbie.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;OProgramie"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="Notatnik_bpr.cpp"/>
+    <INCLUDEPATH value="OProgramie;..\Notatnikd;..\Notatnik;&quot;D:\miko\Nauka\Ce_plus_plus\Rok III\Semestr V\Wykład\{06} 08.11.2006\#11&quot;;&quot;C:\Documents and Settings\mikolaj\Pulpit\WWIN&quot;;&quot;C:\Program Files\Netropa\Multimedia Keyboard&quot;;&quot;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="OProgramie;..\Notatnikd;..\Notatnik;&quot;D:\miko\Nauka\Ce_plus_plus\Rok III\Semestr V\Wykład\{06} 08.11.2006\#11&quot;;&quot;C:\Documents and Settings\mikolaj\Pulpit\WWIN&quot;;&quot;C:\Program Files\Netropa\Multimedia Keyboard&quot;;&quot;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -c 
+      -tW -tWM"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Notatnik_bpr.res" FORMNAME="" UNITNAME="Notatnik_bpr.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Notatnik_bpr.cpp" FORMNAME="" UNITNAME="Notatnik_bpr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Notatnik_cpp.cpp" FORMNAME="Notatnik" UNITNAME="Notatnik_cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="OProgramie\OProgramie_cpp.cpp" FORMNAME="FOProgramie" UNITNAME="OProgramie_cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=19
+MinorVer=11
+Release=2006
+Build=1
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=Notatnik
+ProductVersion=02:22
+Comments=1.	Napisz prosty edytor tekstu będący odpowiednikiem programu Notatnik dostępnego w systemie
+Windows. Program powinien umożliwiać tworzenie i edytowanie plików tekstowych.
+2.	Elementy funkcjonalne:
+menu (TMainMenu), pasek narzędzi (TToolBar), obszar edycji tekstu (TMemo),
+-	pasek stanu (TStatusBar),
+-	menu podręczne (TPopupMenu).
+3.	Ważniejsze akcje:
+-	utworzenie nowego pliku - jeśli akcja zostanie wywołana w trakcie edycji pliku program
+powinien ostrzec o możliwości utraty danych,
+otwarcie istniejącego pliku - analogicznie do akcji tworzenia pliku program powinien informować o możliwości utraty nie zapisanych danych,
+-	zapis pliku,
+-	operacje edycji: Kopiuj, Wytnij, Wklej, Usuń, Zaznacz wszystko - powinny być dostępne
+również z menu podręcznego,
+wstawianie bieżącej daty i godziny,
+-	przełączanie w tryb zawijania wierszy,
+wybór czcionki,
+wyświetlanie okna informacji o programie.
+4.	Dodatkowe uwagi:
+-	należy dodać własną ikonę programu,
+na pasku stanu w kolejnych panelach należy wyświetlić informację o pozycji kursora na ekranie oraz informacje o tym, czy zawartość pliku uległa zmianie.
+
+EM=
+ONP=
+NW=
+
+[HistoryLists\hlIncludePath]
+Count=4
+Item0=OProgramie;..\Notatnikd;..\Notatnik;D:\miko\Nauka\Ce_plus_plus\Rok III\Semestr V\Wykład\{06} 08.11.2006\#11;C:\Documents and Settings\mikolaj\Pulpit\WWIN;C:\Program Files\Netropa\Multimedia Keyboard;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01;$(BCB)\include;$(BCB)\include\vcl
+Item1=D:\miko\Nauka\Ce_plus_plus\Rok III\Semestr V\Wykład\{06} 08.11.2006\#11;C:\Documents and Settings\mikolaj\Pulpit\WWIN;C:\Program Files\Netropa\Multimedia Keyboard;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01;$(BCB)\include;$(BCB)\include\vcl
+Item2=C:\Documents and Settings\mikolaj\Pulpit\WWIN;C:\Program Files\Netropa\Multimedia Keyboard;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01;$(BCB)\include;$(BCB)\include\vcl
+Item3=C:\Program Files\Netropa\Multimedia Keyboard;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=OProgramie;..\Notatnikd;..\Notatnik;D:\miko\Nauka\Ce_plus_plus\Rok III\Semestr V\Wykład\{06} 08.11.2006\#11;C:\Documents and Settings\mikolaj\Pulpit\WWIN;C:\Program Files\Netropa\Multimedia Keyboard;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01;$(BCB)\lib\obj;$(BCB)\lib
+Item1=D:\miko\Nauka\Ce_plus_plus\Rok III\Semestr V\Wykład\{06} 08.11.2006\#11;C:\Documents and Settings\mikolaj\Pulpit\WWIN;C:\Program Files\Netropa\Multimedia Keyboard;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01;$(BCB)\lib\obj;$(BCB)\lib
+Item2=C:\Documents and Settings\mikolaj\Pulpit\WWIN;C:\Program Files\Netropa\Multimedia Keyboard;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01;$(BCB)\lib\obj;$(BCB)\lib
+Item3=C:\Program Files\Netropa\Multimedia Keyboard;C:\Documents and Settings\mikolaj\Pulpit\PROGRAM01;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+  </IDEOPTIONS>
+</PROJECT>
